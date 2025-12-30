@@ -17,6 +17,9 @@ int main(int argc, char *argv[]) {
 
   node init = create_linkedlist(10);
   linkedlist_pushback(init, 10);
+
+  linkedlist_pushfront(&init, 68);
   print_linkedlist(init);
+
   return 0;
 }

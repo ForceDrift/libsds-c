@@ -32,3 +32,12 @@ void print_linkedlist(node linkedlist) {
     linkedlist = linkedlist->next;
   }
 }
+
+void linkedlist_pushfront(node *linkedlist, int32_t value) {
+  node new_node = malloc(sizeof(struct node_header));
+
+  new_node->data = value;
+
+  new_node->next = linkedlist;
+  linkedlist = new_node;
+}

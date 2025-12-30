@@ -12,6 +12,6 @@ node create_linkedlist(int32_t value);
 
 void print_linkedlist(node linkedlist);
 void linkedlist_pushback(node linkedlist, int32_t value);
-void linkedlist_pushfront(node linkedlist, int32_t);
+void linkedlist_pushfront(node *linkedlist, int32_t value);
 
 #endif
