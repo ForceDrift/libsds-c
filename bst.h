@@ -10,12 +10,13 @@ typedef struct tree_node_header {
 
 } *tree_node;
 
+/* create a node in the binary search tree with [value]*/
 tree_node create_bst_node(int32_t value);
 
+/* insert a value into the binary tree starting from [head] */
 void bst_insert(int32_t key, tree_node head);
 
+/* print binary search tree using dfs */
 void bst_print(tree_node head, int32_t nodes);
-
-void print_queue();
 
 #endif // !__LIBSC_BINARY_SEARCH_TREE_H__
