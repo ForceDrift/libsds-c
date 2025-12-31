@@ -79,6 +79,7 @@ void vector_insert(vector vec, int32_t pos, int32_t value) {
           (vec->length - pos + 1) * vec->element_size);
   vec->length += 1;
 
+  // fill in empty gap
   memcpy(remove_address - 1, (void *)&value, vec->element_size);
 }
 

@@ -4,7 +4,6 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 node create_linkedlist(int32_t value) {
   node first_node = malloc(sizeof(struct node_header));
   if (first_node == NULL)
